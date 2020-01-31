@@ -30,9 +30,9 @@ se rnu " set relative number for better editing experience
 Learn more from the external command video from Linkedin Learning.  
 [Reference](https://www.linkedin.com/learning/learning-vim/external-commands?u=43752620)  
 
-**Go to a file inside vim**
+**Go to a file inside vim**  
 `gf`  
-**Info**
+**Info**  
 Just hit gf and you vim will open the right fiel for you, provided that the file path is correct.  
 [Reference](https://www.linkedin.com/learning/learning-vim/open-files-from-name?u=43752620)  
 
