@@ -20,6 +20,17 @@ se rnu " set relative number for better editing experience
 - % – The % is nothing but current file name. In this example, it is /etc/apache2/conf.d/mediawiki.conf. In other words tee command is run as root and it takes standard input (or the buffer) and write it to a file represented by %. However, this will prompt to reload file again (hit L to load changes in vim itself)  
 [Reference](https://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission/)  
 
+**How to copy content of website to file**  
+`:-1 r !curl https://raw.githubusercontent.com/brucechanjianle/tmux_setup/master/.tmux.conf`  
+**Info**  
+- :-1 – Start from the first line (without entering).  
+- r – Read command (refer to below).  
+- !curl – Call shell with curl command.  
+- https...tmux.conf – Provide the url link.  
+
+You may also want to use the `curl` command alone.  
+`curl -o .tmux.conf https://raw.githubusercontent.com/brucechanjianle/tmux_setup/master/.tmux.conf`  
+
 **Open file with cursor at the end**  
 `vim "+normal G" file.txt`  
 [Reference](https://edunham.net/2015/01/29/vim_open_file_with_cursor_at_the_end.html)  
