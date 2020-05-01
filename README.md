@@ -22,10 +22,10 @@ se rnu " set relative number for better editing experience
 
 ---  
 
-**How to set vim as terminal default editor**
-`sudo update-alternatives --config editor`
-**Info**
-- Select vim as the default editor by providing the corresponding number to the terminal and hitting enter.
+**How to set vim as terminal default editor**  
+`sudo update-alternatives --config editor`  
+**Info**  
+- Select vim as the default editor by providing the corresponding number to the terminal and hitting enter.  
 
 ---  
 
