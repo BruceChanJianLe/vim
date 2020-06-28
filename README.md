@@ -65,6 +65,17 @@ Just hit gf and you vim will open the right file for you, provided that the file
 
 ---  
 
+**Tab edit inside vim**  
+`:tabe file.txt` Tab edit file.txt.  
+`gt` Go to next tab.  
+`gT` Go to previous tab.  
+`<number>gt` Go to tab<number>.  
+ Use this method to edit several files in different tab.  
+  [Reference](https://www.quora.com/How-do-I-switch-between-tabs-in-vim)  
+ 
+ ---
+ 
+**Info**  
 ## Abbreviation  
 long | short
 --- | ---
