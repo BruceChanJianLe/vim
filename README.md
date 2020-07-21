@@ -8,6 +8,16 @@ se nu " set line number
 se history=1000 " set history line to 100
 se hls " hightlight search
 se rnu " set relative number for better editing experience
+
+" Search and Replace
+nnoremap <Leader>r :%s///g<Left><Left>
+nnoremap <Leader>rc :%s///gc<Left><Left><Left>
+
+" Save all file
+nnoremap <Leader>w :wa<CR>
+
+"Save and quit
+nnoremap <Leader>x :x<CR>
 ```
 
 ## Common Problems  
@@ -72,6 +82,12 @@ Just hit gf and you vim will open the right file for you, provided that the file
 `<number>gt` Go to tab<number>.  
  Use this method to edit several files in different tab.  
   [Reference](https://www.quora.com/How-do-I-switch-between-tabs-in-vim)  
+ 
+ ---
+ 
+ **Source .vimrc in vim**
+ `:so $MYVIMRC`  
+ [Reference](https://www.youtube.com/watch?v=C_l_aHqpKdA)  
  
  ---
  
@@ -283,3 +299,6 @@ e.g. :vimgrep /foo/ **/*
 - `:tabdo command` - run the command on all tabs (e.g. :tabdo q - closes all opened tabs)
 
 [Reference](https://vim.rtorr.com/)  
+[Search&Replace](https://nickjanetakis.com/blog/find-and-replace-text-in-1-or-more-files-using-vim-fzf-and-ripgrep)  
+[LeaderKey](https://www.youtube.com/watch?v=C_l_aHqpKdA)  
+[LeaderKeyAs/<Space>](https://www.youtube.com/watch?v=AXTScDNu_3c)  
