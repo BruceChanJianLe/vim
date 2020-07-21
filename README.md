@@ -10,14 +10,51 @@ se hls " hightlight search
 se rnu " set relative number for better editing experience
 
 " Search and Replace
-nnoremap <Leader>r :%s///g<Left><Left>
-nnoremap <Leader>rc :%s///gc<Left><Left><Left>
+nnoremap <Leader>r :%s///gc<Left><Left><Left>
 
 " Save all file
 nnoremap <Leader>w :wa<CR>
 
 "Save and quit
 nnoremap <Leader>x :x<CR>
+
+"Reset edit
+nnoremap <Leader>e :e!<CR>
+```
+
+## vscodevim settings.json
+```json
+{
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "window.zoomLevel": 0,
+    "editor.lineNumbers": "relative",
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build-vscode",
+    "testMate.cpp.log.userId": "82cdd95340a0c3075fb44e7c043c393e1bdb7a70",
+    "testMate.cpp.log.logSentry": "disable_3",
+    "vim.leader": "<space>",
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "/home/chanjl/.vimrc",
+    "scm.defaultViewMode": "tree",
+    "vim.normalModeKeyBindingsNonRecursive": [
+            {
+                "before": ["<leader>", "w"],
+                "after": [":wa"]
+            },
+            {
+                "before": ["<leader>", "x"],
+                "after": [":x"]
+            },
+            {
+                "before": ["<leader>", "r"],
+                "after": ["%s///gc<Left><Left><Left>"]
+            },
+            {
+                "before": ["<leader>", "e"],
+                "after": [":e!"]
+            }
+    ]
+}
 ```
 
 ## Common Problems  
