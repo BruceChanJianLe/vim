@@ -33,6 +33,10 @@ endfunction
 nnoremap <Leader>n :call ToogleNumber()<CR>
 ```
 
+```bash
+curl -o .vimrc https://raw.githubusercontent.com/BruceChanJianLe/vim/master/.vimrc
+```
+
 ## vscodevim settings.json
 ```json
 {
