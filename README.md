@@ -22,20 +22,15 @@ nnoremap <Leader>x :x<CR>
 nnoremap <Leader>e :e!<CR>
 
 " Toggle line numbers
-let NUMBER = "on"
-function! ToogleNumber(...)
-  if a:1 == "on"
-    se nonu
-    se nornu
-    let g:NUMBER = "off"
-  elseif a:1 == "off"
-    se nu
-    se rnu
-    let g:NUMBER = "on"
+function! ToogleNumber()
+  if (&relativenumber == 1)
+    se nonu | se nornu | echo "Toggle line numbers OFF"
+  else
+    se nu | se rnu | echo "Toggle line numbers ON"
   endif
 endfunction
 
-nnoremap <Leader>n :call ToogleNumber(NUMBER)<CR> <bar> :echo "Toggle line numbers"<CR>
+nnoremap <Leader>n :call ToogleNumber()<CR>
 ```
 
 ## vscodevim settings.json
