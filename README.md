@@ -20,6 +20,22 @@ nnoremap <Leader>x :x<CR>
 
 "Reset edit
 nnoremap <Leader>e :e!<CR>
+
+" Toggle line numbers
+let NUMBER = "on"
+function! ToogleNumber(...)
+  if a:1 == "on"
+    se nonu
+    se nornu
+    let g:NUMBER = "off"
+  elseif a:1 == "off"
+    se nu
+    se rnu
+    let g:NUMBER = "on"
+  endif
+endfunction
+
+nnoremap <Leader>n :call ToogleNumber(NUMBER)<CR> <bar> :echo "Toggle line numbers"<CR>
 ```
 
 ## vscodevim settings.json
@@ -340,3 +356,4 @@ e.g. :vimgrep /foo/ **/*
 [LeaderKey](https://www.youtube.com/watch?v=C_l_aHqpKdA)  
 [LeaderKeyAs/<Space>](https://www.youtube.com/watch?v=AXTScDNu_3c)  
 [Tutorial Missing Semester on Vim](https://missing.csail.mit.edu/2020/editors/)
+Vimscripting: [link1](https://devhints.io/vimscript) [link2](https://learnvimscriptthehardway.stevelosh.com/chapters/19.html#local-options) [link3](https://www.youtube.com/watch?v=CXiftX7vufo) [link4](https://richsoni.com/posts/2014-12-21-vimscript-overview/)
