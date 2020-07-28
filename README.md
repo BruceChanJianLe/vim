@@ -339,3 +339,4 @@ e.g. :vimgrep /foo/ **/*
 [Search&Replace](https://nickjanetakis.com/blog/find-and-replace-text-in-1-or-more-files-using-vim-fzf-and-ripgrep)  
 [LeaderKey](https://www.youtube.com/watch?v=C_l_aHqpKdA)  
 [LeaderKeyAs/<Space>](https://www.youtube.com/watch?v=AXTScDNu_3c)  
+[Tutorial Missing Semester on Vim](https://missing.csail.mit.edu/2020/editors/)
