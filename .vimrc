@@ -18,7 +18,7 @@ nnoremap <Leader>x :x<CR>
 nnoremap <Leader>e :e!<CR>
 
 " Toggle line numbers
-function! ToogleNumber()
+function! ToggleNumber()
   if (&relativenumber == 1)
     se nonu | se nornu | echo "Toggle line numbers OFF"
   else
@@ -26,5 +26,16 @@ function! ToogleNumber()
   endif
 endfunction
 
-nnoremap <Leader>n :call ToogleNumber()<CR>
+nnoremap <Leader>n :call ToggleNumber()<CR>
+
+" Toggle highlight search
+function! ToggleHighlight()
+  if (&hls == 1)
+    se nohls | echo "Toggle highlight search OFF"
+  else
+    se hls | echo "Toggle hightlight search ON"
+  endif
+endfunction
+
+nnoremap <Leader>h :call ToggleHighlight()<CR>
 
