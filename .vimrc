@@ -33,7 +33,7 @@ function! ToggleHighlight()
   if (&hls == 1)
     se nohls | echo "Toggle highlight search OFF"
   else
-    se hls | echo "Toggle hightlight search ON"
+    se hls | echo "Toggle highlight search ON"
   endif
 endfunction
 
