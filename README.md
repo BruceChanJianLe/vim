@@ -80,6 +80,14 @@ curl -o .vimrc https://raw.githubusercontent.com/BruceChanJianLe/vim/master/.vim
             {
                 "before": ["<leader>", "e"],
                 "after": [":e!"]
+            },
+            {
+                "before": ["<leader>", "q"],
+                "commands": ["workbench.action.closeActiveEditor"]
+            },
+            {
+                "before": ["<leader>", "z"],
+                "commands": ["workbench.action.toggleEditorWidths"] 
             }
     ]
 }
