@@ -172,6 +172,7 @@ set | se
 highlightsearch | hls
 number | nu
 relativenumber | rnu
+syntax | syn
 
 ## Cheat Sheet  
 ### Global
