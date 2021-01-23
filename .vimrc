@@ -1,3 +1,4 @@
+se expandtab " turns tab into spaces
 se nu " set line number
 se history=1000 " set history line to 100
 se hls " hightlight search
