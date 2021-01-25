@@ -377,6 +377,6 @@ e.g. :vimgrep /foo/ **/*
 [Search&Replace](https://nickjanetakis.com/blog/find-and-replace-text-in-1-or-more-files-using-vim-fzf-and-ripgrep)  
 [LeaderKey](https://www.youtube.com/watch?v=C_l_aHqpKdA)  
 [LeaderKeyAs/<Space>](https://www.youtube.com/watch?v=AXTScDNu_3c)  
-[Tutorial Missing Semester on Vim](https://missing.csail.mit.edu/2020/editors/)
-Vimscripting: [link1](https://devhints.io/vimscript) [link2](https://learnvimscriptthehardway.stevelosh.com/chapters/19.html#local-options) [link3](https://www.youtube.com/watch?v=CXiftX7vufo) [link4](https://learnvimscriptthehardway.stevelosh.com/chapters/24.html) [link5](https://richsoni.com/posts/2014-12-21-vimscript-overview/)
+[Tutorial Missing Semester on Vim](https://missing.csail.mit.edu/2020/editors/)  
+Vimscripting: [link1](https://devhints.io/vimscript) [link2](https://learnvimscriptthehardway.stevelosh.com/chapters/19.html#local-options) [link3](https://www.youtube.com/watch?v=CXiftX7vufo) [link4](https://learnvimscriptthehardway.stevelosh.com/chapters/24.html) [link5](https://richsoni.com/posts/2014-12-21-vimscript-overview/)  
 [vimrc_setup](https://www.youtube.com/watch?v=n9k9scbTuvQ)  
