@@ -92,6 +92,12 @@ Plug 'vim-utils/vim-man'
 call plug#end()
 ```
 
+To install plugin.  
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 ```bash
 curl -o .vimrc https://raw.githubusercontent.com/BruceChanJianLe/vim/master/.vimrc
 ```
