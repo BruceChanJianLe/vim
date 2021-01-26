@@ -94,6 +94,10 @@ curl -o .vimrc https://raw.githubusercontent.com/BruceChanJianLe/vim/master/.vim
 }
 ```
 
+## Plug-in
+
+Currently, we are using Plug Vim from [plugin_github_link](https://github.com/junegunn/vim-plug). To install the plugin please type this inside of vim `:PlugInstall`. For more information please visit the link above.  
+
 ## Common Problems  
 **How to save vim without sudo**  
 `:w !sudo tee %`  
