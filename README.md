@@ -4,7 +4,23 @@ This repo contains everyday vim usage method and .vimrc for future reference.
 
 ## .vimrc
 ```
+syntax on
+
+se noerrorbells
+se tabstop=4 softtabstop=4
+se shiftwidth=4
 se expandtab " turns tab into spaces
+se smartindent
+se nowrap
+se noswapfile
+se nobackup
+se undodir=~/.vim/undodir
+se undofile
+se incsearch
+
+se colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
 se nu " set line number
 se history=1000 " set history line to 100
 se hls " hightlight search
@@ -40,11 +56,40 @@ function! ToggleHighlight()
   if (&hls == 1)
     se nohls | echo "Toggle highlight search OFF"
   else
-    se hls | echo "Toggle highlight search ON"
+    se hls | echo "Toggle hightlight search ON"
   endif
 endfunction
 
 nnoremap <Leader>h :call ToggleHighlight()<CR>
+
+" Between vim panes
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
+
+" Toggle undo-tree
+nnoremap <leader>u :UndotreeShow<CR>
+
+call plug#begin('~/.vim/plugged')
+
+" Git Function
+Plug 'tpope/vim-fugitive'
+
+" Fuzzy Search
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" CPP Highlighting
+Plug 'octol/vim-cpp-enhanced-highlight'
+
+" Undo List
+Plug 'mbbill/undotree'
+
+" Manpages
+Plug 'vim-utils/vim-man'
+
+call plug#end()
 ```
 
 ```bash
