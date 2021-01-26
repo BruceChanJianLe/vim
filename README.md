@@ -134,6 +134,22 @@ curl -o .vimrc https://raw.githubusercontent.com/BruceChanJianLe/vim/master/.vim
             {
                 "before": ["<leader>", "z"],
                 "commands": ["workbench.action.toggleEditorWidths"] 
+            },
+            {
+                "before": ["<leader>", "h"],
+                "commands": ["workbench.action.navigateLeft"]
+            },
+            {
+                "before": ["<leader>", "j"],
+                "commands": ["workbench.action.navigateDown"]
+            },
+            {
+                "before": ["<leader>", "k"],
+                "commands": ["workbench.action.navigateUp"]
+            },
+            {
+                "before": ["<leader>", "l"],
+                "commands": ["workbench.action.navigateRight"]
             }
     ]
 }
