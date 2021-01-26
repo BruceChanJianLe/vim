@@ -53,8 +53,8 @@ function! ToggleHighlight()
     se hls | echo "Toggle hightlight search ON"
   endif
 endfunction
-
-nnoremap <Leader>h :call ToggleHighlight()<CR>
+" crashed with between vim panes command
+nnoremap <Leader><leader>h :call ToggleHighlight()<CR>
 
 " Between vim panes
 nnoremap <leader>h :wincmd h<CR>
