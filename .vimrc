@@ -34,6 +34,17 @@ nnoremap <Leader>x :x<CR>
 "Before edit
 nnoremap <Leader>e :e!<CR>
 
+" Toogle text wrap
+function! ToogleTextWrap()
+  if (&wrap == 1)
+    se nowrap | echo "Toggle text wrap OFF"
+  else
+    se wrap | echo "Toggle text warp ON"
+  endif
+endfunction
+
+nnoremap <Leader>z :call ToogleTextWrap()<CR>
+
 " Toggle line numbers
 function! ToggleNumber()
   if (&relativenumber == 1)
