@@ -102,11 +102,13 @@ Plug 'vim-utils/vim-man'
 
 call plug#end()
 ```
-Creating Undo folder:
+
+Creating Undo folder:  
 ```bash
 mkdir -p ~/.vim/undodir
 ```
-To install plugi:.  
+
+To install plugin:  
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
