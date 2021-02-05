@@ -49,7 +49,7 @@ function! ToogleTextWrap()
   endif
 endfunction
 
-nnoremap <leader><Leader>z :call ToogleTextWrap()<CR>
+nnoremap <Leader><Leader>z :call ToogleTextWrap()<CR>
 
 " Toggle line numbers
 function! ToggleNumber()
