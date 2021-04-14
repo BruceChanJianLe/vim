@@ -100,6 +100,9 @@ Plug 'mbbill/undotree'
 " Manpages
 Plug 'vim-utils/vim-man'
 
+" Visual Drag
+Plug 'jondkinney/dragvisuals.vim'
+
 call plug#end()
 ```
 
