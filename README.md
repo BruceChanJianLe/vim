@@ -82,6 +82,15 @@ nnoremap <leader>l :wincmd l<CR>
 " Toggle undo-tree
 nnoremap <leader>u :UndotreeShow<CR>
 
+" Visual Drag Keys
+vmap  <expr>  <S-LEFT>   DVB_Drag('left')
+vmap  <expr>  <S-RIGHT>  DVB_Drag('right')
+vmap  <expr>  <S-DOWN>   DVB_Drag('down')
+vmap  <expr>  <S-UP>     DVB_Drag('up')
+vmap  <expr>  D          DVB_Duplicate()
+" Remove any introduced trailing whitespace after moving
+let g:DVB_TrimWS = 1
+
 call plug#begin('~/.vim/plugged')
 
 " Git Function
