@@ -130,6 +130,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 curl -o .vimrc https://raw.githubusercontent.com/BruceChanJianLe/vim/master/.vimrc
 ```
 
+```bash
+vi +PlugInstall +qa
+```
+
 ## vscodevim settings.json
 ```json
 {
