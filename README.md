@@ -188,6 +188,14 @@ vi +PlugInstall +qa
             {
                 "before": ["<leader>", "l"],
                 "commands": ["workbench.action.navigateRight"]
+            },
+            {
+                "before": ["<leader>", ","],
+                "commands": ["workbench.action.previousEditorInGroup"]
+            },
+            {
+                "before": ["<leader>", "."],
+                "commands": ["workbench.action.nextEditorInGroup"]
             }
     ]
 }
