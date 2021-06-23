@@ -151,15 +151,19 @@ vi +PlugInstall +qa
     "vim.normalModeKeyBindingsNonRecursive": [
             {
                 "before": ["<leader>", "w"],
-                "after": [":wa"]
+                "commands": ["workbench.action.files.saveFiles"]
             },
             {
                 "before": ["<leader>", "x"],
-                "after": [":x"]
+                "commands": ["workbench.action.files.saveFiles","workbench.action.closeActiveEditor"]
             },
             {
                 "before": ["<leader>", "r"],
                 "after": ["%s///gc<Left><Left><Left>"]
+            },
+            {
+                "before": ["<leader>", "<leader>", "r"],
+                "after": ["%s///g<Left><Left>"]
             },
             {
                 "before": ["<leader>", "e"],
