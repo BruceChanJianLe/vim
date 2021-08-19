@@ -145,7 +145,6 @@ vi +PlugInstall +qa
     "testMate.cpp.log.userId": "82cdd95340a0c3075fb44e7c043c393e1bdb7a70",
     "testMate.cpp.log.logSentry": "disable_3",
     "vim.leader": "<space>",
-    "vim.vimrc.enable": true,
     "vim.vimrc.path": "/home/chanjl/.vimrc",
     "scm.defaultViewMode": "tree",
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -201,7 +200,7 @@ vi +PlugInstall +qa
                 "before": ["<leader>", "."],
                 "commands": ["workbench.action.nextEditorInGroup"]
             }
-    ]
+        ]
 }
 ```
 
