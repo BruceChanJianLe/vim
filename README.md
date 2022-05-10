@@ -199,6 +199,10 @@ vi +PlugInstall +qa
             {
                 "before": ["<leader>", "."],
                 "commands": ["workbench.action.nextEditorInGroup"]
+            },
+            {
+                "before": ["<leader>", "s"],
+                "commands": ["workbench.action.editor.changeLanguageMode"]
             }
         ]
 }
