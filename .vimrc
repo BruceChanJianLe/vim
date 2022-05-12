@@ -25,6 +25,9 @@ let mapleader = "\<Space>" " Set /space as the leader key
 " Search and Replace
 nnoremap <Leader>r :%s///gc<Left><Left><Left>
 
+" Set Syntax
+nnoremap <Leader>s :se syn=
+
 " Save all file
 nnoremap <Leader>w :wa<CR>
 
