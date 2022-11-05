@@ -1,10 +1,13 @@
 syntax on
 
+" enter the current millenium
+se nocompatible
+
 se noerrorbells
 se tabstop=4 softtabstop=4
 se shiftwidth=4
 se expandtab " turns tab into spaces
-se smartindent
+"se nosmartindent
 se nowrap
 se noswapfile
 se nobackup
@@ -25,7 +28,7 @@ let mapleader = "\<Space>" " Set /space as the leader key
 " Search and Replace
 nnoremap <Leader>r :%s///gc<Left><Left><Left>
 
-" Set Syntax
+" Set syntax
 nnoremap <Leader>s :se syn=
 
 " Save all file
@@ -37,16 +40,16 @@ nnoremap <Leader>x :x<CR>
 "Before edit
 nnoremap <Leader>e :e!<CR>
 
-" Toogle text wrap
-function! ToogleTextWrap()
-  if (&wrap == 1)
-    se nowrap | echo "Toggle text wrap OFF"
+" Toogle paste format
+function! TogglePaste()
+  if (&paste == 1)
+    se nopaste | echo "Toggle paste format OFF"
   else
-    se wrap | echo "Toggle text warp ON"
+    se paste | echo "Toggle paste format ON"
   endif
 endfunction
 
-nnoremap <Leader><Leader>z :call ToogleTextWrap()<CR>
+nnoremap <Leader>p :call TogglePaste()<CR>
 
 " Toggle line numbers
 function! ToggleNumber()
@@ -59,6 +62,17 @@ endfunction
 
 nnoremap <Leader>n :call ToggleNumber()<CR>
 
+" Toogle text wrap
+function! ToogleTextWrap()
+  if (&wrap == 1)
+    se nowrap | echo "Toggle text wrap OFF"
+  else
+    se wrap | echo "Toggle text warp ON"
+  endif
+endfunction
+
+nnoremap <Leader><Leader>z :call ToogleTextWrap()<CR>
+
 " Toggle highlight search
 function! ToggleHighlight()
   if (&hls == 1)
@@ -67,7 +81,7 @@ function! ToggleHighlight()
     se hls | echo "Toggle hightlight search ON"
   endif
 endfunction
-" crashed with between vim panes command
+"crashed with between vim panes command
 nnoremap <Leader><leader>h :call ToggleHighlight()<CR>
 
 " Between vim panes
@@ -94,7 +108,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 
 " Fuzzy Search
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " CPP Highlighting
@@ -106,7 +120,13 @@ Plug 'mbbill/undotree'
 " Manpages
 Plug 'vim-utils/vim-man'
 
+" w3m
+Plug 'yuratomo/w3m.vim'
+
 " Visual Drag
 Plug 'jondkinney/dragvisuals.vim'
+
+" Code Completion
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
