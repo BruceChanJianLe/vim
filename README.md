@@ -6,6 +6,9 @@ This repo contains everyday vim usage method and .vimrc for future reference.
 ```
 syntax on
 
+" enter the current millenium
+se nocompatible
+
 se noerrorbells
 se tabstop=4 softtabstop=4
 se shiftwidth=4
@@ -42,6 +45,15 @@ nnoremap <Leader>x :x<CR>
 
 "Before edit
 nnoremap <Leader>e :e!<CR>
+
+" Toogle paste format
+function! TogglePaste()
+  if (&paste == 1)
+    se nopaste | echo "Toggle paste format OFF"
+  else
+    se paste | echo "Toggle paste format ON"
+  endif
+endfunction
 
 " Toogle text wrap
 function! ToogleTextWrap()
