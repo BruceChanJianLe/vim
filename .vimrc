@@ -126,6 +126,9 @@ Plug 'yuratomo/w3m.vim'
 " Visual Drag
 Plug 'jondkinney/dragvisuals.vim'
 
+" Surround
+Plug 'tpope/vim-surround'
+
 " Code Completion
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
