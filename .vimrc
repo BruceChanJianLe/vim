@@ -40,6 +40,10 @@ nnoremap <Leader>x :x<CR>
 "Before edit
 nnoremap <Leader>e :e!<CR>
 
+"Quit / Quit!
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
+
 " Toogle paste format
 function! TogglePaste()
   if (&paste == 1)
