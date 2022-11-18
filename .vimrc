@@ -120,8 +120,8 @@ Plug 'mbbill/undotree'
 " Manpages
 Plug 'vim-utils/vim-man'
 
-" w3m
-Plug 'yuratomo/w3m.vim'
+" w3m (not used)
+" Plug 'yuratomo/w3m.vim'
 
 " Visual Drag
 Plug 'jondkinney/dragvisuals.vim'
