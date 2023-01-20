@@ -52,7 +52,7 @@ Setting up your vscode with vim bindings.
             },
             {
                 "before": ["<leader>", "e"],
-                "after": [":e!"]
+                "commands": [":e!"]
             },
             {
                 "before": ["<leader>", "q"],
@@ -89,9 +89,50 @@ Setting up your vscode with vim bindings.
             {
                 "before": ["<leader>", "s"],
                 "commands": ["workbench.action.editor.changeLanguageMode"]
+            },
+            {
+                "before": ["<leader>", "<leader>", "h"],
+                "commands": ["workbench.action.compareEditor.focusSecondarySide"]
+            },
+            {
+                "before": ["<leader>", "<leader>", "l"],
+                "commands": ["workbench.action.compareEditor.focusPrimarySide"]
+            },
+            {
+                "before": ["alt+j"],
+                "commands": ["editor.action.moveLinesDownAction"]
+            },
+            {
+                "before": ["alt+k"],
+                "commands": ["editor.action.moveLinesUpAction"]
+            },
+            {
+                "before": ["<leader>", "p", "v"],
+                "commands": ["workbench.files.action.focusFilesExplorer"]
+            },
+            {
+                "before": ["<leader>", "p", "s"],
+                "commands": ["workbench.view.search"]
+            },
+            {
+                "before": ["<leader>", "p"],
+                "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
             }
-        ]
-}
+        ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+            {
+                "before": ["<leader>", "y"],
+                "commands": ["editor.action.clipboardCopyAction", "extension.vim_escape"]
+            },
+            {
+                "before": ["<leader>", "d"],
+                "commands": ["editor.action.clipboardCopyAction", "extension.vim_delete", "extension.vim_escape"]
+            },
+            {
+                "before": ["<leader>", "p"],
+                "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+            }
+        ],}
 ```
 
 ## Plug-in
