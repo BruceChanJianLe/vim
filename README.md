@@ -132,7 +132,8 @@ Setting up your vscode with vim bindings.
                 "before": ["<leader>", "p"],
                 "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
             }
-        ],}
+        ]
+}
 ```
 
 ## Plug-in
