@@ -1,5 +1,15 @@
 # vim
 
+REFER TO [nvim](https://github.com/brucechanjianle/nvim).
+
+# DEPRECATED!
+# DEPRECATED!!
+# DEPRECATED!!!
+# DEPRECATED!!!!
+
+
+This repo will continue to store vscode [Vim](https://github.com/VSCodeVim/Vim) plugin settings until [VSCode Neovim](https://github.com/vscode-neovim/vscode-neovim) plugin is used.
+
 This repo contains everyday vim usage method and .vimrc for future reference.
 
 Get vim plugin manager:  
