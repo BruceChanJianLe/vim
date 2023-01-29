@@ -127,6 +127,10 @@ Setting up your vscode with vim bindings.
             {
                 "before": ["<leader>", "p"],
                 "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+            },
+            {
+                "before": ["K"],
+                "commands": ["editor.action.showHover"]
             }
         ],
     "vim.visualModeKeyBindingsNonRecursive": [
