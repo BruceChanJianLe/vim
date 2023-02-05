@@ -1,0 +1,185 @@
+{
+    "editor.lineNumbers": "relative",
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build-vscode",
+    "testMate.cpp.log.userId": "82cdd95340a0c3075fb44e7c043c393e1bdb7a70",
+    "testMate.cpp.log.logSentry": "disable_3",
+    "vim.leader": "<space>",
+    // "vim.vimrc.path": "/home/chanjl/.vimrc",
+    "scm.defaultViewMode": "tree",
+    "vim.normalModeKeyBindingsNonRecursive": [
+            {
+                "before": ["<leader>", "w"],
+                "commands": ["workbench.action.files.saveFiles"]
+            },
+            {
+                "before": ["<leader>", "x"],
+                "commands": ["workbench.action.files.saveFiles","workbench.action.closeActiveEditor"]
+            },
+            {
+                "before": ["<leader>", "r"],
+                "after": ["%s///gc<Left><Left><Left>"]
+            },
+            {
+                "before": ["<leader>", "<leader>", "r"],
+                "after": ["%s///g<Left><Left>"]
+            },
+            {
+                "before": ["<leader>", "e"],
+                "commands": [":e!"]
+            },
+            {
+                "before": ["<leader>", "q"],
+                "commands": ["workbench.action.closeActiveEditor"]
+            },
+            {
+                "before": ["<leader>", "z"],
+                "commands": ["workbench.action.toggleEditorWidths"] 
+            },
+            {
+                "before": ["<leader>", "h"],
+                "commands": ["workbench.action.navigateLeft"]
+            },
+            {
+                "before": ["<leader>", "j"],
+                "commands": ["workbench.action.navigateDown"]
+            },
+            {
+                "before": ["<leader>", "k"],
+                "commands": ["workbench.action.navigateUp"]
+            },
+            {
+                "before": ["<leader>", "l"],
+                "commands": ["workbench.action.navigateRight"]
+            },
+            {
+                "before": ["<leader>", ","],
+                "commands": ["workbench.action.previousEditorInGroup"]
+            },
+            {
+                "before": ["<leader>", "."],
+                "commands": ["workbench.action.nextEditorInGroup"]
+            },
+            {
+                "before": ["<leader>", "s"],
+                "commands": ["workbench.action.editor.changeLanguageMode"]
+            },
+            {
+                "before": ["<leader>", "<leader>", "h"],
+                "commands": ["workbench.action.compareEditor.focusSecondarySide"]
+            },
+            {
+                "before": ["<leader>", "<leader>", "l"],
+                "commands": ["workbench.action.compareEditor.focusPrimarySide"]
+            },
+            {
+                "before": ["alt+j"],
+                "commands": ["editor.action.moveLinesDownAction"]
+            },
+            {
+                "before": ["alt+k"],
+                "commands": ["editor.action.moveLinesUpAction"]
+            },
+            {
+                "before": ["<leader>", "p", "v"],
+                "commands": ["workbench.files.action.focusFilesExplorer"]
+            },
+            {
+                "before": ["<leader>", "p", "s"],
+                "commands": ["workbench.view.search"]
+            },
+            {
+                "before": ["<leader>", "p"],
+                "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+            },
+            {
+                "before": ["K"],
+                "commands": ["editor.action.showHover"]
+            },
+        ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+            {
+                "before": ["<leader>", "y"],
+                "commands": ["editor.action.clipboardCopyAction", "extension.vim_escape"]
+            },
+            {
+                "before": ["<leader>", "d"],
+                "commands": ["editor.action.clipboardCopyAction", "extension.vim_delete", "extension.vim_escape"]
+            },
+            {
+                "before": ["<leader>", "p"],
+                "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+            }
+    ],
+    "C_Cpp.default.intelliSenseMode": "clang-x86",
+    "clangd.path": "/home/chanjl/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/10.0.0/clangd_10.0.0/bin/clangd",
+    "editor.renderWhitespace": "all",
+    "C_Cpp.updateChannel": "Insiders",
+    "xml.symbols.maxItemsComputed": 10000,
+    "[makefile]": {
+        "editor.insertSpaces": false
+    },
+    "c-cpp-flylint.clang.standard": [
+        "c++11",
+    ],
+    "cppcheck.severity": "",
+    "c-cpp-flylint.cppcheck.verbose": true,
+    "c-cpp-flylint.debug": true,
+    "c-cpp-flylint.cppcheck.standard": [
+        "c++11",
+    ],
+    "C_Cpp.loggingLevel": "Information",
+    "c-cpp-flylint.cppcheck.extraArgs": [
+        "--enable=all"
+    ],
+    "c-cpp-flylint.clang.includePaths": [
+        "${workspaceFolder}/include/${workspaceFolderBasename}",
+        "${workspaceFolder}/../../devel/include/",
+    ],
+    "c-cpp-flylint.cppcheck.includePaths": [
+        "${workspaceFolder}/include/${workspaceFolderBasename}",
+        "${workspaceFolder}/../../devel/include/",
+    ],
+    "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.automationShell.linux": "/home/chanjl/vscoderc",
+    "doxdocgen.file.versionTag": "\\version 0.0",
+    "doxdocgen.generic.authorEmail": "chanjl@i2r.a-star.edu.sg",
+    "doxdocgen.generic.authorName": "Chan Jian Le",
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Copyright (c) 2021 by Institute for Infocomm Research, Singapore (I2R). All rights reserved."
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "vim.handleKeys": {
+        "<C-d>": true
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "C_Cpp.workspaceSymbols": "All",
+    "security.workspace.trust.untrustedFiles": "open",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "doxdocgen.cpp.tparamTemplate": "\\tparam {param} ",
+    "doxdocgen.file.fileTemplate": "\\file {name}",
+    "doxdocgen.generic.briefTemplate": "\\brief {text}",
+    "doxdocgen.generic.dateTemplate": "\\date {date}",
+    "doxdocgen.generic.paramTemplate": "\\param {param} ",
+    "doxdocgen.generic.returnTemplate": "\\return {type} ",
+    "doxdocgen.generic.authorTag": "\\author {author} ({email})",
+    "doxdocgen.generic.useGitUserEmail": true,
+    "doxdocgen.generic.useGitUserName": true,
+    "C/C++ Include Guard.Macro Type": "Filepath",
+    "C/C++ Include Guard.Path Depth": 1,
+    "C/C++ Include Guard.Remove Extension": false,
+    "C/C++ Include Guard.Shorten Underscores": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "files.associations": {
+        "*.cpp": "cpp"
+    },
+    "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/lua/user/init.lua",
+    "vscode-neovim.mouseSelectionStartVisualMode": true,
+} 
