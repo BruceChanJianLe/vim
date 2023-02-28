@@ -145,6 +145,14 @@ Setting up your vscode with vim bindings.
             {
                 "before": ["<leader>", "p"],
                 "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+            },
+            {
+                "before": ["<"],
+                "after": ["<","g","v"]
+            },
+            {
+                "before": [">"],
+                "after": [">","g","v"],
             }
         ]
 }
