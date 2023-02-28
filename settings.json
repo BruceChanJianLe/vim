@@ -109,6 +109,14 @@
             {
                 "before": ["<leader>", "p"],
                 "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+            },
+            {
+                "before": ["<"],
+                "after": ["<","g","v"]
+            },
+            {
+                "before": [">"],
+                "after": [">","g","v"],
             }
     ],
     "C_Cpp.default.intelliSenseMode": "clang-x86",
