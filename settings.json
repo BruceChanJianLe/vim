@@ -108,7 +108,6 @@
                 "before": ["ctrl+b"],
                 "commands": ["workbench.action.toggleSidebarVisibility"]
             },
-
         ],
     "vim.visualModeKeyBindingsNonRecursive": [
             {
