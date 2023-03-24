@@ -104,6 +104,10 @@
                 "before": ["ctrl+j"],
                 "commands": ["editor.action.marker.nextInFiles"]
             },
+            {
+                "before": ["ctrl+b"],
+                "commands": ["workbench.action.toggleSidebarVisibility"]
+            },
 
         ],
     "vim.visualModeKeyBindingsNonRecursive": [
