@@ -131,7 +131,19 @@ Setting up your vscode with vim bindings.
             {
                 "before": ["K"],
                 "commands": ["editor.action.showHover"]
-            }
+            },
+            {
+                "before": ["ctrl+k"],
+                "commands": ["editor.action.marker.prevInFiles"]
+            },
+            {
+                "before": ["ctrl+j"],
+                "commands": ["editor.action.marker.nextInFiles"]
+            },
+            {
+                "before": ["ctrl+b"],
+                "commands": ["workbench.action.toggleSidebarVisibility"]
+            },
         ],
     "vim.visualModeKeyBindingsNonRecursive": [
             {
