@@ -129,7 +129,15 @@
             {
                 "before": [">"],
                 "after": [">","g","v"],
-            }
+            },
+            {
+                "before": ["<leader>", ","],
+                "commands": ["workbench.action.previousEditorInGroup"]
+            },
+            {
+                "before": ["<leader>", "."],
+                "commands": ["workbench.action.nextEditorInGroup"]
+            },
     ],
     "C_Cpp.default.intelliSenseMode": "clang-x86",
     "clangd.path": "/home/chanjl/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/10.0.0/clangd_10.0.0/bin/clangd",
