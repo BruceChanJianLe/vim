@@ -108,6 +108,22 @@
                 "before": ["ctrl+b"],
                 "commands": ["workbench.action.toggleSidebarVisibility"]
             },
+            {
+                "before": ["<leader>", "o"],
+                "after": ["m", "p", "o", "<esc>", "`", "p"]
+            },
+            {
+                "before": ["<leader>", "O"],
+                "after": ["m", "p", "O", "<esc>", "`", "p"]
+            },
+            {
+                "before": ["ctrl+d"],
+                "after": ["ctrl+d", "z", "z"]
+            },
+            {
+                "before": ["ctrl+u"],
+                "after": ["ctrl+u", "z", "z"]
+            }
         ],
     "vim.visualModeKeyBindingsNonRecursive": [
             {
