@@ -123,6 +123,14 @@
             {
                 "before": ["ctrl+u"],
                 "after": ["ctrl+u", "z", "z"]
+            },
+            {
+                "before": ["n"],
+                "after": ["n", "z", "z", "z", "v"]
+            },
+            {
+                "before": ["N"],
+                "after": ["N", "z", "z", "z", "v"]
             }
         ],
     "vim.visualModeKeyBindingsNonRecursive": [
