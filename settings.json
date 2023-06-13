@@ -7,6 +7,24 @@
     "vim.leader": "<space>",
     // "vim.vimrc.path": "/home/chanjl/.vimrc",
     "scm.defaultViewMode": "tree",
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["ctrl+h"],
+      "after": ["left"]
+    },
+    {
+      "before": ["ctrl+l"],
+      "after": ["right"]
+    },
+    {
+      "before": ["alt+h"],
+      "commands": ["cursorWordEndLeft"]
+    },
+    {
+      "before": ["alt+l"],
+      "commkands": ["cursorWordEndRight"]
+    },
+  ],
     "vim.normalModeKeyBindingsNonRecursive": [
             {
                 "before": ["<leader>", "w"],
@@ -238,4 +256,5 @@
     },
     "vscode-neovim.neovimInitVimPaths.linux": "~/.config/nvim/lua/user/init.lua",
     "vscode-neovim.mouseSelectionStartVisualMode": true,
+    "window.enableMenuBarMnemonics": false,
 } 
