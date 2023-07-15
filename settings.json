@@ -7,183 +7,187 @@
     "vim.leader": "<space>",
     // "vim.vimrc.path": "/home/chanjl/.vimrc",
     "scm.defaultViewMode": "tree",
-  "vim.insertModeKeyBindingsNonRecursive": [
-    {
-      "before": ["ctrl+h"],
-      "after": ["left"]
-    },
-    {
-      "before": ["ctrl+l"],
-      "after": ["right"]
-    },
-    {
-      "before": ["alt+h"],
-      "commands": ["cursorWordEndLeft"]
-    },
-    {
-      "before": ["alt+l"],
-      "commkands": ["cursorWordEndRight"]
-    },
-  ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+      {
+        "before": ["ctrl+h"],
+        "after": ["left"]
+      },
+      {
+        "before": ["ctrl+l"],
+        "after": ["right"]
+      },
+      {
+        "before": ["alt+h"],
+        "commands": ["cursorWordEndLeft"]
+      },
+      {
+        "before": ["alt+l"],
+        "commkands": ["cursorWordEndRight"]
+      },
+    ],
     "vim.normalModeKeyBindingsNonRecursive": [
-            {
-                "before": ["<leader>", "w"],
-                "commands": ["workbench.action.files.saveFiles"]
-            },
-            {
-                "before": ["<leader>", "x"],
-                "commands": ["workbench.action.files.saveFiles","workbench.action.closeActiveEditor"]
-            },
-            {
-                "before": ["<leader>", "r"],
-                "after": ["%s///gc<Left><Left><Left>"]
-            },
-            {
-                "before": ["<leader>", "<leader>", "r"],
-                "after": ["%s///g<Left><Left>"]
-            },
-            {
-                "before": ["<leader>", "e"],
-                "commands": [":e!"]
-            },
-            {
-                "before": ["<leader>", "q"],
-                "commands": ["workbench.action.closeActiveEditor"]
-            },
-            {
-                "before": ["<leader>", "z"],
-                "commands": ["workbench.action.toggleEditorWidths"] 
-            },
-            {
-                "before": ["<leader>", "h"],
-                "commands": ["workbench.action.navigateLeft"]
-            },
-            {
-                "before": ["<leader>", "j"],
-                "commands": ["workbench.action.navigateDown"]
-            },
-            {
-                "before": ["<leader>", "k"],
-                "commands": ["workbench.action.navigateUp"]
-            },
-            {
-                "before": ["<leader>", "l"],
-                "commands": ["workbench.action.navigateRight"]
-            },
-            {
-                "before": ["<leader>", ","],
-                "commands": ["workbench.action.previousEditorInGroup"]
-            },
-            {
-                "before": ["<leader>", "."],
-                "commands": ["workbench.action.nextEditorInGroup"]
-            },
-            {
-                "before": ["<leader>", "s"],
-                "commands": ["workbench.action.editor.changeLanguageMode"]
-            },
-            {
-                "before": ["<leader>", "<leader>", "h"],
-                "commands": ["workbench.action.compareEditor.focusSecondarySide"]
-            },
-            {
-                "before": ["<leader>", "<leader>", "l"],
-                "commands": ["workbench.action.compareEditor.focusPrimarySide"]
-            },
-            {
-                "before": ["alt+j"],
-                "commands": ["editor.action.moveLinesDownAction"]
-            },
-            {
-                "before": ["alt+k"],
-                "commands": ["editor.action.moveLinesUpAction"]
-            },
-            {
-                "before": ["<leader>", "p", "v"],
-                "commands": ["workbench.files.action.focusFilesExplorer"]
-            },
-            {
-                "before": ["<leader>", "p", "s"],
-                "commands": ["workbench.view.search"]
-            },
-            {
-                "before": ["<leader>", "p"],
-                "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
-            },
-            {
-                "before": ["K"],
-                "commands": ["editor.action.showHover"]
-            },
-            {
-                "before": ["ctrl+k"],
-                "commands": ["editor.action.marker.prevInFiles"]
-            },
-            {
-                "before": ["ctrl+j"],
-                "commands": ["editor.action.marker.nextInFiles"]
-            },
-            {
-                "before": ["ctrl+b"],
-                "commands": ["workbench.action.toggleSidebarVisibility"]
-            },
-            {
-                "before": ["<leader>", "o"],
-                "after": ["m", "p", "o", "<esc>", "`", "p"]
-            },
-            {
-                "before": ["<leader>", "O"],
-                "after": ["m", "p", "O", "<esc>", "`", "p"]
-            },
-            {
-                "before": ["ctrl+d"],
-                "after": ["ctrl+d", "z", "z"]
-            },
-            {
-                "before": ["ctrl+u"],
-                "after": ["ctrl+u", "z", "z"]
-            },
-            {
-                "before": ["n"],
-                "after": ["n", "z", "z", "z", "v"]
-            },
-            {
-                "before": ["N"],
-                "after": ["N", "z", "z", "z", "v"]
-            }
-        ],
+      {
+        "before": ["<leader>", "w"],
+        "commands": ["workbench.action.files.saveFiles"]
+      },
+      {
+        "before": ["<leader>", "x"],
+        "commands": ["workbench.action.files.saveFiles","workbench.action.closeActiveEditor"]
+      },
+      {
+        "before": ["<leader>", "r"],
+        "after": ["%s///gc<Left><Left><Left>"]
+      },
+      {
+        "before": ["<leader>", "<leader>", "r"],
+        "after": ["%s///g<Left><Left>"]
+      },
+      {
+        "before": ["<leader>", "e"],
+        "commands": [":e!"]
+      },
+      {
+        "before": ["<leader>", "q"],
+        "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+        "before": ["<leader>", "z"],
+        "commands": ["workbench.action.toggleEditorWidths"] 
+      },
+      {
+        "before": ["<leader>", "h"],
+        "commands": ["workbench.action.navigateLeft"]
+      },
+      {
+        "before": ["<leader>", "j"],
+        "commands": ["workbench.action.navigateDown"]
+      },
+      {
+        "before": ["<leader>", "k"],
+        "commands": ["workbench.action.navigateUp"]
+      },
+      {
+        "before": ["<leader>", "l"],
+        "commands": ["workbench.action.navigateRight"]
+      },
+      {
+        "before": ["<leader>", ","],
+        "commands": ["workbench.action.previousEditorInGroup"]
+      },
+      {
+        "before": ["<leader>", "."],
+        "commands": ["workbench.action.nextEditorInGroup"]
+      },
+      {
+        "before": ["<leader>", "s"],
+        "commands": ["workbench.action.editor.changeLanguageMode"]
+      },
+      {
+        "before": ["<leader>", "<leader>", "h"],
+        "commands": ["workbench.action.compareEditor.focusSecondarySide"]
+      },
+      {
+        "before": ["<leader>", "<leader>", "l"],
+        "commands": ["workbench.action.compareEditor.focusPrimarySide"]
+      },
+      {
+        "before": ["alt+j"],
+        "commands": ["editor.action.moveLinesDownAction"]
+      },
+      {
+        "before": ["alt+k"],
+        "commands": ["editor.action.moveLinesUpAction"]
+      },
+      {
+        "before": ["<leader>", "p", "v"],
+        "commands": ["workbench.files.action.focusFilesExplorer"]
+      },
+      {
+        "before": ["<leader>", "p", "s"],
+        "commands": ["workbench.view.search"]
+      },
+      {
+        "before": ["<leader>", "p"],
+        "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+      },
+      {
+        "before": ["K"],
+        "commands": ["editor.action.showHover"]
+      },
+      {
+        "before": ["ctrl+k"],
+        "commands": ["editor.action.marker.prevInFiles"]
+      },
+      {
+        "before": ["ctrl+j"],
+        "commands": ["editor.action.marker.nextInFiles"]
+      },
+      {
+        "before": ["ctrl+b"],
+        "commands": ["workbench.action.toggleSidebarVisibility"]
+      },
+      {
+        "before": ["<leader>", "o"],
+        "after": ["m", "p", "o", "<esc>", "`", "p"]
+      },
+      {
+        "before": ["<leader>", "O"],
+        "after": ["m", "p", "O", "<esc>", "`", "p"]
+      },
+      {
+        "before": ["ctrl+d"],
+        "after": ["ctrl+d", "z", "z"]
+      },
+      {
+        "before": ["ctrl+u"],
+        "after": ["ctrl+u", "z", "z"]
+      },
+      {
+        "before": ["n"],
+        "after": ["n", "z", "z", "z", "v"]
+      },
+      {
+        "before": ["N"],
+        "after": ["N", "z", "z", "z", "v"]
+      },
+      {
+        "before": ["G"],
+        "after": ["G", "z", "z"]
+      }
+    ],
     "vim.visualModeKeyBindingsNonRecursive": [
-            {
-                "before": ["<leader>", "y"],
-                "commands": ["editor.action.clipboardCopyAction", "extension.vim_escape"]
-            },
-            {
-                "before": ["<leader>", "d"],
-                "commands": ["editor.action.clipboardCopyAction", "extension.vim_delete", "extension.vim_escape"]
-            },
-            {
-                "before": ["<leader>", "p"],
-                "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
-            },
-            {
-                "before": ["<"],
-                "after": ["<","g","v"]
-            },
-            {
-                "before": [">"],
-                "after": [">","g","v"],
-            },
-            {
-                "before": ["<leader>", ","],
-                "commands": ["workbench.action.previousEditorInGroup"]
-            },
-            {
-                "before": ["<leader>", "."],
-                "commands": ["workbench.action.nextEditorInGroup"]
-            },
-            {
-                "before": ["<leader>", "w"],
-                "commands": ["workbench.action.files.saveFiles"]
-            },
+      {
+        "before": ["<leader>", "y"],
+        "commands": ["editor.action.clipboardCopyAction", "extension.vim_escape"]
+      },
+      {
+        "before": ["<leader>", "d"],
+        "commands": ["editor.action.clipboardCopyAction", "extension.vim_delete", "extension.vim_escape"]
+      },
+      {
+        "before": ["<leader>", "p"],
+        "commands": ["editor.action.clipboardPasteAction", "extension.vim_escape"]
+      },
+      {
+        "before": ["<"],
+        "after": ["<","g","v"]
+      },
+      {
+        "before": [">"],
+        "after": [">","g","v"],
+      },
+      {
+        "before": ["<leader>", ","],
+        "commands": ["workbench.action.previousEditorInGroup"]
+      },
+      {
+        "before": ["<leader>", "."],
+        "commands": ["workbench.action.nextEditorInGroup"]
+      },
+      {
+        "before": ["<leader>", "w"],
+        "commands": ["workbench.action.files.saveFiles"]
+      },
     ],
     "C_Cpp.default.intelliSenseMode": "clang-x86",
     "clangd.path": "/home/chanjl/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/10.0.0/clangd_10.0.0/bin/clangd",
