@@ -154,6 +154,14 @@
         "before": ["G"],
         "after": ["G", "z", "z"]
       }
+      {
+        "before": [ "[", "c"],
+        "commands": [ "workbench.action.editor.previousChange" ]
+      },
+      {
+        "before": [ "]", "c"],
+        "commands": [ "workbench.action.editor.nextChange" ]
+      },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
       {
